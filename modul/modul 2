@@ -7,6 +7,10 @@ class Dosen
     def info(self):
         print(f"Nama Dosen {nama}, dengan NIDN {nidn} pengampu mata kuliah {mata_kuliah}")
 
+    def update_mata_kuliah(mk_baru):
+        self.mata_kuliah = mk_baru
+        print(f"[INFO] Mata kuliah {self.nama} berhasil diubah menjadi: {self.mata_kuliah}")
+
 dosen = Dosen("Vearen", "123456", "Desain Web")
 dosen.info()
 
