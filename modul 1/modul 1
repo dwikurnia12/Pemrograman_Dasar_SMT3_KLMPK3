@@ -1,6 +1,6 @@
 from datetime import datetime
 nama = input("Masukkan Nama : ")
-tgl_lahir_str = input("Masukkan Tanggal Lahir : ")
+tgl_lahir_str = input("Masukkan Tanggal Lahir : Format day-month-year")
 
 tgl_lahir = datetime.strptime(tgl_lahir_str, "%d-%m-%Y")
 hari_ini = datetime.today()
