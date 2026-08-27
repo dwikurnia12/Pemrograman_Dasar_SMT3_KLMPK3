@@ -1,0 +1,7 @@
+
+tgl_lahir = datetime.strptime(tgl_lahir_str, "%d-%m-%Y")
+hari_ini = datetime.today()
+umur_tahun = (
+    hari_ini.year
+    - tgl_lahir.year
+    - ((hari_ini.month, hari_ini.day) < (tgl_lahir.month, tgl_lahir.day)))
