@@ -1,0 +1,11 @@
+class Dosen
+    def __init__(self, nama, nidn, mata_kuliah)
+        self.nama = nama
+        self.nidn = nidn
+        self.mata_kuliah = mata_kuliah
+
+    def info(self):
+        print(f"Nama Dosen {nama}, dengan NIDN {nidn} pengampu mata kuliah {mata_kuliah}")
+
+dosen = Dosen("Vearen", "123456", "Desain Web")
+dosen.info()
