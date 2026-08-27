@@ -1,0 +1,7 @@
+nama = "lala"
+umur = 19
+tinggi = 161
+is_mahasiswa = True
+
+nama = input("Masukkan Nama : ")
+print("Nama : ", nama)
