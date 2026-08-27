@@ -8,3 +8,7 @@ umur_tahun = (
     hari_ini.year
     - tgl_lahir.year
     - ((hari_ini.month, hari_ini.day) < (tgl_lahir.month, tgl_lahir.day)))
+
+print("===HASIL===")
+print(f"Nama : {nama}")
+print(f"Umur : {umur}")
