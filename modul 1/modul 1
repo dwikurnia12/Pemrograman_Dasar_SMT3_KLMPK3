@@ -1,2 +1,3 @@
-nama = ("Masukkan Nama : ")
-tgl_lahir = ("Masukkan Tanggal Lahir : ")
+from datetime import datetime
+nama = input("Masukkan Nama : ")
+tgl_lahir_str = input("Masukkan Tanggal Lahir : ")
