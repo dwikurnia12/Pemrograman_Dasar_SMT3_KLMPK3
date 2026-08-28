@@ -11,9 +11,6 @@ class Dosen:
         self.mata_kuliah = mk_baru
         print(f"[INFO] Mata kuliah {self.nama} berhasil diubah menjadi: {self.mata_kuliah}")
 
-dosen = Dosen("Vearen", "123456", "Desain Web")
-dosen.info()
-
 dosen1 = Dosen("Vearen Dika", "0012345670", "Pemrograman Dasar")
 dosen2 = Dosen("Aris Budianto", "00223456700", "Strategi Belajar Mengajar")
 dosen3 = Dosen("Slamet Kurniawan", "00323456700", "Keamanan Jaringan Komputer")
@@ -27,3 +24,9 @@ dosen2.info()
 
 print("\nDosen 3")
 dosen3.info()
+
+print("\n===UPDATE MATA KULIAH===")
+dosen1.update_mata_kuliah("Desain Web")
+
+print("\n===DATA DOSEN UPDATE===")
+dosen1.info()
