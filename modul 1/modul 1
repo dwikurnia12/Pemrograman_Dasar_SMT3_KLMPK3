@@ -1,5 +1,0 @@
-nama = ("Masukkan Nama : ")
-tgl_lahir = ("Masukkan Tanggal Lahir : ")
-
-def sapa (nama):
-    print("Halo", nama)
