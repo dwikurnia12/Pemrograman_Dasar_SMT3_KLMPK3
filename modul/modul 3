@@ -9,3 +9,14 @@ def tambah_lagu():
 
     koleksi_lagu.append(lagu)
     print("Lagu berhasil ditambahkan!\n")
+
+def tampilkan_lagu():
+    if len(koleksi_lagu) == 0:
+        print("Koleksi lagu masih kosong.\n")
+    else:
+        print("\n=== DAFTAR KOLEKSI LAGU ===")
+
+        for i, lagu in enumerate(koleksi_lagu, start=1):
+            print(f"{i}. {lagu['judul']} - {lagu['penyanyi']}")
+
+        print()
