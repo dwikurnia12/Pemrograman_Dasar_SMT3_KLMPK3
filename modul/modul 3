@@ -1,0 +1,11 @@
+def tambah_lagu():
+    judul = input("Masukkan judul lagu   : ")
+    penyanyi = input("Masukkan nama penyanyi : ")
+
+    lagu = {
+        "judul": judul,
+        "penyanyi": penyanyi
+    }
+
+    koleksi_lagu.append(lagu)
+    print("Lagu berhasil ditambahkan!\n")
