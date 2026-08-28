@@ -1,5 +1,7 @@
+koleksi_lagu = []
+
 def tambah_lagu():
-    judul = input("Masukkan judul lagu   : ")
+    judul = input("Masukkan judul lagu : ")
     penyanyi = input("Masukkan nama penyanyi : ")
 
     lagu = {
@@ -20,3 +22,6 @@ def tampilkan_lagu():
             print(f"{i}. {lagu['judul']} - {lagu['penyanyi']}")
 
         print()
+
+tambah_lagu()
+tampilkan_lagu()
