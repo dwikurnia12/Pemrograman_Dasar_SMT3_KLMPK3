@@ -23,5 +23,16 @@ def tampilkan_lagu():
 
         print()
 
+def hapus_lagu():
+    judul = input("Masukkan judul lagu yang ingin dihapus :")
+
+    for lagu in koleksi_lagu:
+        if lagu ["judul"].lower() == judul.lower():
+            koleksi_lagu.remove(lagu)
+            print("Lagu berhasil dihapus!")
+            return
+
+    print("Lagu tidak ditemukan...")
+
 tambah_lagu()
 tampilkan_lagu()
