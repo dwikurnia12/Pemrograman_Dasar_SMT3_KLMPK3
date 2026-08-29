@@ -34,5 +34,44 @@ def hapus_lagu():
 
     print("Lagu tidak ditemukan...")
 
-tambah_lagu()
-tampilkan_lagu()
+def cari_lagu():
+    penyanyi = input("Masukkan nama penyanyi yang dicari : ")
+    ditemukan = False
+
+    print(f"\n=== HASIL PENCARIAN PENYANYI: {penyanyi.upper()} ===")
+    for lagu in koleksi_lagu:
+        if penyanyi.lower() in lagu["penyanyi"].lower():
+            print(f"- {lagu['judul']} ({lagu['penyanyi']})")
+            ditemukan = True
+
+    if not ditemukan:
+        print("Lagu dari penyanyi tersebut tidak ditemukan.")
+    print()
+
+def main():
+    while True:
+        print("=== MENU MANAJEMEN KOLEKSI LAGU ===")
+        print("1. Tambah Lagu")
+        print("2. Tampilkan Semua Lagu")
+        print("3. Hapus Lagu")
+        print("4. Cari Lagu (Penyanyi)")
+        print("5. Keluar")
+        
+        pilihan = input("Pilih menu (1-5): ")
+        print()
+
+        if pilihan == "1":
+            tambah_lagu()
+        elif pilihan == "2":
+            tampilkan_lagu()
+        elif pilihan == "3":
+            hapus_lagu()
+        elif pilihan == "4":
+            cari_lagu()
+        elif pilihan == "5":
+            print("Terima kasih, program selesai!")
+            break
+        else:
+            print("Pilihan tidak valid! Silakan pilih menu 1-5.\n")
+
+main()
